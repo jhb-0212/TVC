@@ -1,0 +1,15 @@
+# agent-pipeline 运行产物（多 Agent 交接的工作区，单任务覆盖式，不入库）
+# 保留 workspace 目录结构（.gitkeep 占位），只忽略其中的交接产物
+workspace/*
+!workspace/.gitkeep
+
+# 归档区（调度 Agent 可选归档历史任务，不入库）
+archive/
+
+# Python 运行缓存
+__pycache__/
+*.pyc
+
+# 编辑器 / 系统文件
+.DS_Store
+Thumbs.db
